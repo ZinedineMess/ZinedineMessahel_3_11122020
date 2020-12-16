@@ -73,7 +73,6 @@ header i:visited {
     background-color: #f6f6f6;
     bottom: 3rem;
     z-index: 2;
-    height: 6em;
 }
 
 .entete h2 {
@@ -90,9 +89,8 @@ header i:visited {
 
 /* SECTION MENU */
 .menu {
-    position: relative;
     bottom: 5rem;
-    height: 74rem;
+    height: 80rem;
 }
 
 .menu article {
