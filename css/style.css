@@ -131,7 +131,7 @@ main {
     color: #bdbdbd;
 }
 
-.fonctionnement-cards div:hover i {
+.fonctionnement-cards div:active i {
     color: #9356DC;
 }
 
@@ -216,9 +216,10 @@ article i {
 }
 
 
-article i:active {
+article i:hover {
     background: transparent;
     color: #9356DC;
+    animation: 1.5s linear 0s normal none infinite focuse;
 }
 
 /* FOOTER */

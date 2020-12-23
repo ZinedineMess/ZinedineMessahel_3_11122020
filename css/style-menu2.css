@@ -162,6 +162,8 @@ header i:visited {
     box-shadow: 0 0 10px #0000002e;
     position: relative;
     margin-bottom: 3rem;
+    width: 9rem;
+    text-align: center;
 }
 
 .commander a:hover {
