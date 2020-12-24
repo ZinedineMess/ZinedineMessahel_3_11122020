@@ -138,7 +138,7 @@ header i:visited {
 /* SECTION MENU */
 .menu {
     bottom: 5rem;
-    height: 65rem;
+    height: 73rem;
 }
 
 .menu section {
@@ -149,6 +149,7 @@ header i:visited {
 .menu section h2 {
     font-weight: lighter;
     font-size: 100%;
+    margin-bottom: 0;
 }
 
 .menu hr {
