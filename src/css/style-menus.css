@@ -122,11 +122,11 @@ header i:visited {
     position: absolute;
 }
 
-.button-1:active {
+.button-1:hover {
     opacity: 0;
 }
 
-.button-2:active {
+.button-2:hover {
     opacity: 1;
     transform: scale(1.2);
 }
@@ -167,6 +167,7 @@ header i:visited {
     height: 4rem;
     position: relative;
     padding-left: 1rem;
+    padding-top: 1rem;
     transition: all 0.5s;
     animation: fadeIn 0.7s ease-in both, top 0.5s linear;
 }

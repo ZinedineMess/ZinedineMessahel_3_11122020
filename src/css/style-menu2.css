@@ -81,28 +81,58 @@ header i:visited {
     padding-top: 2rem;
 }
 
+.entete button {
+    background-color: #f6f6f6;
+    font-size: 1.5rem;
+    cursor: grab;
+    transition: all 0.3s;
+    border: none;
+}
+
 @media (max-width: 320.98px) {
-    .entete i {
+    .entete button {
         position: absolute;
-        right: 1.2rem;
-        top: 2.2rem;
+        right: 0.8rem;
+        top: 1.9rem;
     }
 }
 
 @media (min-width: 321px) {
-    .entete i {
+    .entete button {
         position: absolute;
-        right: 2.5rem;
-        top: 2.2rem;
+        right: 1.5rem;
+        top: 1.9rem;
     }
 }
 
 @media (min-width: 400px) {
-    .entete i {
+    .entete button {
         position: absolute;
-        right: 3rem;
-        top: 2.2rem;
+        right: 2rem;
+        top: 2rem;
     }
+}
+
+.button-1 {
+    opacity: 1;
+}
+
+.button-2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.button-1:hover {
+    opacity: 0;
+}
+
+.button-2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.button-2 i {
+    color: #9356DC;
 }
 
 /* SECTION MENU */
@@ -111,12 +141,12 @@ header i:visited {
     height: 80rem;
 }
 
-.menu article {
+.menu section {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.menu article h2 {
+.menu section h2 {
     font-weight: lighter;
     font-size: 100%;
     margin: 0;

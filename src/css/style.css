@@ -186,14 +186,14 @@ main {
 }
 
 #restaurants header {
-    padding: 2rem;
-    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 #restaurants div {
     display: flex;
     flex-direction: column;
-    padding-top: 0rem;
+    padding-top: 3.5rem;
 }
 
 article {
@@ -258,13 +258,13 @@ article button {
     position: absolute;
 }
 
-.button-1:active {
+.button-1:hover {
     opacity: 0;
 }
 
-.button-2:active {
+.button-2:hover {
     opacity: 1;
-    color:#9356DC;
+    color: #9356DC;
     transform: scale(1.2);
 }
 
