@@ -132,6 +132,13 @@ main {
 }
 
 @media (max-width: 320.98px) {
+    .fonctionnement {
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
     .fonctionnement-cards div i {
         position: absolute;
         left: 1.1rem;
@@ -180,12 +187,13 @@ main {
 
 #restaurants header {
     padding: 2rem;
+    padding-bottom: 1rem;
 }
 
 #restaurants div {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 0rem;
 }
 
 article {
@@ -230,20 +238,34 @@ article p {
     margin: 1rem;
 }
 
-article i {
+article button {
     position: absolute;
-    right: 2.5rem;
+    right: 2rem;
     bottom: 2rem;
     border: none;
     background-color: #efefef;
     font-size: 1.5rem;
+    cursor: grab;
+    transition: all 0.3s;
 }
 
+.button-1 {
+    opacity: 1;
+}
 
-article i:hover {
-    background: transparent;
-    color: #9356DC;
-    animation: 1.5s linear 0s normal none infinite focuse;
+.button-2 {
+    opacity: 0;
+    position: absolute;
+}
+
+.button-1:active {
+    opacity: 0;
+}
+
+.button-2:active {
+    opacity: 1;
+    color:#9356DC;
+    transform: scale(1.2);
 }
 
 /* FOOTER */
