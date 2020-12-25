@@ -95,6 +95,27 @@ header i:visited {
         right: 0.8rem;
         top: 1.9rem;
     }
+
+    .price {
+        position: absolute;
+        left: 80%;
+        top: 1rem;
+        font-weight: bold;
+    }
+
+    .menu h3 {
+        position: absolute;
+        padding-top: 0;
+        width: 70%;
+        font-size: 100%;
+    }
+
+    .menu p {
+        position: absolute;
+        top: 2rem;
+        font-size: 95%;
+        width: 50%;
+    }
 }
 
 @media (min-width: 321px) {
@@ -103,6 +124,27 @@ header i:visited {
         right: 1.5rem;
         top: 1.9rem;
     }
+
+    .price {
+        position: absolute;
+        top: 1rem;
+        font-weight: bold;
+        left: 85%;
+    }
+
+    .menu h3 {
+        position: absolute;
+        top: 0;
+        width: 70%;
+        font-size: 100%;
+    }
+
+    .menu p {
+        position: absolute;
+        top: 2rem;
+        font-size: 95%;
+        width: 65%;
+    }
 }
 
 @media (min-width: 400px) {
@@ -110,6 +152,26 @@ header i:visited {
         position: absolute;
         right: 2rem;
         top: 2rem;
+    }
+
+    .price {
+        position: absolute;
+        top: 1rem;
+        font-weight: bold;
+        left: 85%;
+    }
+
+    .menu h3 {
+        position: absolute;
+        top: 0;
+        width: 70%;
+    }
+
+    .menu p {
+        position: absolute;
+        top: 2rem;
+        font-size: 95%;
+        width: 65%;
     }
 }
 
@@ -138,7 +200,7 @@ header i:visited {
 /* SECTION MENU */
 .menu {
     bottom: 5rem;
-    height: 73rem;
+    height: 74.5rem;
 }
 
 .menu section {
@@ -153,7 +215,7 @@ header i:visited {
 }
 
 .menu hr {
-    height: 0.20rem;
+    height: 0.2rem;
     width: 2.6rem;
     border: none;
     background-color: #99E2D0;
@@ -169,22 +231,19 @@ header i:visited {
     position: relative;
     padding-left: 1rem;
     padding-top: 1rem;
-    transition: all 0.5s;
     animation: fadeIn 0.7s ease-in both, top 0.5s linear;
+    margin-top: 0.5rem;
 }
 
 .menu div:nth-of-type(1) {
-    -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 
 .menu div:nth-of-type(2) {
-    -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
 
 .menu div:nth-of-type(3) {
-    -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
@@ -200,31 +259,11 @@ header i:visited {
     }
 }
 
-@media (max-width: 320.98px) {
-    .price {
-        position: absolute;
-        left: 15rem;
-        top: 1rem;
-        font-weight: bold;
-    }
-
-    .menu h3 {
-        position: absolute;
-        top: 0;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 80%;
-    }
-
-    .menu p {
-        position: absolute;
-        top: 2rem;
-        font-size: 95%;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 80%;
-    }
+.menu h3,
+.menu p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .price {
@@ -243,8 +282,52 @@ header i:visited {
     position: absolute;
     top: 2rem;
     font-size: 95%;
-    overflow: hidden;
-    white-space: nowrap;
+}
+
+.menu span {
+    position: absolute;
+    background-color: #99E2D0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    bottom: 0rem;
+    width: 0%;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 100%;
+    color: #fff;
+    font-size: 1.375rem;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.menu div:hover span {
+    left: 80%;
+    visibility: visible;
+    width: 20%;
+}
+
+.menu div:hover .price {
+    left: 65%;
+}
+
+.menu div:hover p {
+    width: 50%;
+}
+
+.menu div:hover i {
+    animation: rotation 0.3s linear 0.3s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* COMMANDER */
