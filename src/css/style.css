@@ -131,37 +131,6 @@ main {
     transform: scale(1.01);
 }
 
-@media (max-width: 320.98px) {
-    .fonctionnement {
-        margin-top: 3rem;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .fonctionnement-cards div i {
-        position: absolute;
-        left: 1.1rem;
-        color: #bdbdbd;
-    }
-}
-
-@media (min-width: 321px) {
-    .fonctionnement-cards div i {
-        position: absolute;
-        left: 2rem;
-        color: #bdbdbd;
-    }
-}
-
-@media (min-width: 400px) {
-    .fonctionnement-cards div i {
-        position: absolute;
-        left: 2.5rem;
-        color: #bdbdbd;
-    }
-}
-
 .fonctionnement-cards div:hover i {
     color: #9356DC;
 }
@@ -290,4 +259,38 @@ footer li {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
     margin-bottom: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+@media (max-width: 320.98px) {
+    .fonctionnement {
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .fonctionnement-cards div i {
+        position: absolute;
+        left: 1.1rem;
+        color: #bdbdbd;
+    }
+}
+
+@media (min-width: 321px) {
+    .fonctionnement-cards div i {
+        position: absolute;
+        left: 2rem;
+        color: #bdbdbd;
+    }
+}
+
+@media (min-width: 400px) {
+    .fonctionnement-cards div i {
+        position: absolute;
+        left: 2.5rem;
+        color: #bdbdbd;
+    }
 }
