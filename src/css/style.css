@@ -277,6 +277,10 @@ footer li {
         left: 1.1rem;
         color: #bdbdbd;
     }
+
+    article button {
+        right: 1rem;
+    }
 }
 
 @media (min-width: 321px) {
@@ -292,5 +296,44 @@ footer li {
         position: absolute;
         left: 2.5rem;
         color: #bdbdbd;
+    }
+}
+
+/* TABLET */
+@media (min-width: 767px) and (max-width: 1365.98px) {
+    .fonctionnement div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #restaurants div {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1366px) and (max-width: 1918.98px) {
+    .fonctionnement div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #restaurants div {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 1919px) {
+    .fonctionnement div {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #restaurants div {
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }

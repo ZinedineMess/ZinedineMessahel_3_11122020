@@ -14,7 +14,6 @@ body {
 }
 
 main {
-    width: 100%;
     background-color: #f6f6f6;
 }
 
@@ -384,5 +383,72 @@ footer li {
         top: 2rem;
         font-size: 95%;
         width: 65%;
+    }
+}
+
+/* TABLET & DESKTOP */
+@media (min-width: 767px) and (max-width: 1918.98px) {
+    .entete button {
+        right: 5%;
+    }
+
+    .entete h2 {
+        margin-left: 2rem;
+    }
+
+    .menu h2,
+    .menu hr {
+        margin-left: 2rem;
+    }
+
+    .menu div {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .menu div:hover span {
+        left: 90%;
+        width: 10%;
+    }
+
+    .price {
+        left: 90%;
+    }
+
+    .menu div:hover .price {
+        left: 80%;
+    }
+}
+
+@media (min-width: 1919px) {
+    .entete button {
+        right: 5%;
+    }
+
+    .entete h2 {
+        margin-left: 4rem;
+    }
+
+    .menu h2,
+    .menu hr {
+        margin-left: 4rem;
+    }
+
+    .menu div {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .menu div:hover span {
+        left: 90%;
+        width: 10%;
+    }
+
+    .price {
+        left: 90%;
+    }
+
+    .menu div:hover .price {
+        left: 80%;
     }
 }
