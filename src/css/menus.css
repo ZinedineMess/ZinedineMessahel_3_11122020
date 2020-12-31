@@ -61,26 +61,32 @@ header i:visited {
     width: 100%;
     height: 18rem;
     object-fit: cover;
-    z-index: 1;
+    z-index: auto;
 }
 
+/* SECTION MENU */
 /* ENTETE */
-.entete {
+#menu {
     position: relative;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     background-color: #f6f6f6;
     bottom: 3rem;
-    z-index: 2;
+    z-index: 1;
 }
 
-.entete h2 {
-    font-family: 'Shrikhand', cursive;
+#menu header {
     margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-family: 'Shrikhand', cursive;
     padding-top: 2rem;
 }
 
-.entete button {
+#menu header button {
     background-color: #f6f6f6;
     font-size: 1.5rem;
     cursor: grab;
@@ -110,32 +116,29 @@ header i:visited {
     color: #9356DC;
 }
 
-/* SECTION MENU */
-.menu {
-    bottom: 5rem;
-    height: 81.5rem;
-}
-
-.menu section {
+/* PLATS */
+.plats section {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.menu section h2 {
+.plats section h2 {
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 100%;
     margin-bottom: 0;
 }
 
-.menu hr {
+.plats hr {
     height: 0.2rem;
     width: 2.6rem;
     border: none;
     background-color: #99E2D0;
     margin-left: 0;
+    margin-bottom: 2rem;
 }
 
-.menu div {
+.plats div {
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 10px #0000002e;
@@ -145,18 +148,17 @@ header i:visited {
     padding-left: 1rem;
     padding-top: 1rem;
     animation: fadeIn 0.7s ease-in both, top 0.5s linear;
-    margin-top: 0.5rem;
 }
 
-.menu div:nth-of-type(1) {
+.plats div:nth-of-type(1) {
     animation-delay: 0s;
 }
 
-.menu div:nth-of-type(2) {
+.plats div:nth-of-type(2) {
     animation-delay: 0.1s;
 }
 
-.menu div:nth-of-type(3) {
+.plats div:nth-of-type(3) {
     animation-delay: 0.2s;
 }
 
@@ -172,13 +174,6 @@ header i:visited {
     }
 }
 
-.menu h3,
-.menu p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
 .price {
     position: absolute;
     right: 2rem;
@@ -186,18 +181,26 @@ header i:visited {
     font-weight: bold;
 }
 
-.menu h3 {
+.plats h3,
+.description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.plats h3 {
     position: absolute;
     top: 0;
 }
 
-.menu p {
+.description {
     position: absolute;
     top: 2rem;
     font-size: 95%;
+    width: 60%;
 }
 
-.menu span {
+.plats span {
     position: absolute;
     background-color: #99E2D0;
     height: 100%;
@@ -215,21 +218,21 @@ header i:visited {
     transition: all 0.3s;
 }
 
-.menu div:hover span {
+.plats div:hover span {
     left: 80%;
     visibility: visible;
     width: 20%;
 }
 
-.menu div:hover .price {
+.plats div:hover .price {
     left: 65%;
 }
 
-.menu div:hover p {
+.plats div:hover .description {
     width: 50%;
 }
 
-.menu div:hover i {
+.plats div:hover i {
     animation: rotation 0.3s linear 0.3s;
 }
 
@@ -247,7 +250,7 @@ header i:visited {
 .commander {
     display: flex;
     justify-content: center;
-    height: 6rem;
+    padding-top: 1rem;
 }
 
 .commander a {
@@ -263,7 +266,6 @@ header i:visited {
     background-position: 80%;
     box-shadow: 0 0 10px #0000002e;
     position: relative;
-    margin-bottom: 3rem;
     width: 9rem;
     text-align: center;
 }
@@ -297,69 +299,10 @@ footer li {
     margin-bottom: 0.5rem;
 }
 
-/* MEDIA QUERIES */
 
 /* MOBILE */
-@media (max-width: 320.98px) {
-    .entete button {
-        position: absolute;
-        right: 0.8rem;
-        top: 1.9rem;
-    }
-
-    .price {
-        position: absolute;
-        left: 80%;
-        top: 1rem;
-        font-weight: bold;
-    }
-
-    .menu h3 {
-        position: absolute;
-        padding-top: 0;
-        width: 70%;
-        font-size: 100%;
-    }
-
-    .menu p {
-        position: absolute;
-        top: 2rem;
-        font-size: 95%;
-        width: 50%;
-    }
-}
-
-@media (min-width: 321px) {
-    .entete button {
-        position: absolute;
-        right: 1.5rem;
-        top: 1.9rem;
-    }
-
-    .price {
-        position: absolute;
-        top: 1rem;
-        font-weight: bold;
-        left: 85%;
-    }
-
-    .menu h3 {
-        position: absolute;
-        top: 0;
-        width: 70%;
-        font-size: 100%;
-    }
-
-    .menu p {
-        position: absolute;
-        top: 2rem;
-        font-size: 95%;
-        width: 65%;
-    }
-}
-
 @media (min-width: 400px) {
-    .entete button {
+    #menu header button {
         position: absolute;
         right: 2rem;
         top: 2rem;
@@ -370,43 +313,86 @@ footer li {
         top: 1rem;
         font-weight: bold;
         left: 85%;
+        width: 100%;
     }
 
-    .menu h3 {
+    .plats h3 {
         position: absolute;
         top: 0;
         width: 70%;
     }
+}
 
-    .menu p {
+@media (max-width: 320.98px) {
+    .title {
+        font-size: 130%;
+    }
+
+    #menu header button {
         position: absolute;
+        right: 0.8rem;
+        top: 1.9rem;
+    }
+
+    .price {
+        position: absolute;
+        left: 80%;
+        font-weight: bold;
         top: 2rem;
         font-size: 95%;
-        width: 65%;
+    }
+
+    .plats h3 {
+        position: absolute;
+        padding-top: 0;
+        width: 70%;
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 321px) {
+    #menu header button {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.9rem;
+    }
+
+    .price {
+        position: absolute;
+        top: 2rem;
+        font-weight: bold;
+        left: 85%;
+    }
+
+    .plats h3 {
+        position: absolute;
+        top: 0;
+        width: 70%;
+        font-size: 100%;
     }
 }
 
 /* TABLET & DESKTOP */
 @media (min-width: 767px) and (max-width: 1918.98px) {
-    .entete button {
+    #menu header button {
         right: 5%;
     }
 
-    .entete h2 {
+    .title {
         margin-left: 2rem;
     }
 
-    .menu h2,
-    .menu hr {
+    .plats h2,
+    .plats hr {
         margin-left: 2rem;
     }
 
-    .menu div {
+    .plats div {
         margin-left: 20%;
         margin-right: 20%;
     }
 
-    .menu div:hover span {
+    .plats div:hover span {
         left: 90%;
         width: 10%;
     }
@@ -415,31 +401,31 @@ footer li {
         left: 90%;
     }
 
-    .menu div:hover .price {
+    .plats div:hover .price {
         left: 80%;
     }
 }
 
 @media (min-width: 1919px) {
-    .entete button {
+    #menu header button {
         right: 5%;
     }
 
-    .entete h2 {
+    .title {
         margin-left: 4rem;
     }
 
-    .menu h2,
-    .menu hr {
+    .plats h2,
+    .plats hr {
         margin-left: 4rem;
     }
 
-    .menu div {
+    .plats div {
         margin-left: 25%;
         margin-right: 25%;
     }
 
-    .menu div:hover span {
+    .plats div:hover span {
         left: 90%;
         width: 10%;
     }
@@ -448,7 +434,7 @@ footer li {
         left: 90%;
     }
 
-    .menu div:hover .price {
+    .plats div:hover .price {
         left: 80%;
     }
 }
