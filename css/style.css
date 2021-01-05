@@ -25,7 +25,7 @@ span {
 }
 
 /*   LOADER   */
-.loader-container {
+.loader {
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -34,7 +34,7 @@ span {
     animation-name: loader;
 }
 
-.loader {
+.loader_item {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -43,7 +43,7 @@ span {
     justify-content: center;
 }
 
-.loader-circle {
+.loader_item-circle {
     position: fixed;
     width: 120px;
     height: 120px;
@@ -166,7 +166,7 @@ main {
 .explorer a:hover {
     transform: scale(1.05);
     background-position: 30%;
-    box-shadow: 0px 0px 20px 1.5px #000;
+    box-shadow: 0px 0px 20px 0.5px #000;
 }
 
 /* SECTION FONCTIONNEMENT */
@@ -177,7 +177,7 @@ main {
     margin-bottom: 4rem;
 }
 
-.fonctionnement-cards div {
+.fonctionnement_cards div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,18 +191,17 @@ main {
     position: relative;
 }
 
-.fonctionnement-cards div:hover {
+.fonctionnement_cards div:hover {
     background-color: #f5edff;
     box-shadow: 10px 20px 19px rgba(0, 0, 0, 0.1);
     transform: scale(1.01);
 }
 
-.fonctionnement-cards div:hover i {
+.fonctionnement_cards div:hover i {
     color: #9356DC;
 }
 
-.fonctionnement-cards span {
-    background-color: #9356DC;
+.fonctionnement_cards span {
     color: #fff;
     position: absolute;
     left: -0.9rem;
@@ -284,20 +283,20 @@ article button {
     transition: all 0.3s;
 }
 
-.button-1 {
+.restaurants_button {
     opacity: 1;
 }
 
-.button-2 {
+.restaurants_button-button2 {
     opacity: 0;
     position: absolute;
 }
 
-.button-1:hover {
+.restaurants_button:hover {
     opacity: 0;
 }
 
-.button-2:hover {
+.restaurants_button-button2:hover {
     opacity: 1;
     color: #9356DC;
     transform: scale(1.2);
@@ -338,7 +337,7 @@ footer li {
         margin-bottom: 3rem;
     }
 
-    .fonctionnement-cards div i {
+    .fonctionnement_cards div i {
         position: absolute;
         left: 1.1rem;
         color: #bdbdbd;
@@ -350,7 +349,7 @@ footer li {
 }
 
 @media (min-width: 321px) {
-    .fonctionnement-cards div i {
+    .fonctionnement_cards div i {
         position: absolute;
         left: 2rem;
         color: #bdbdbd;
@@ -358,7 +357,7 @@ footer li {
 }
 
 @media (min-width: 400px) {
-    .fonctionnement-cards div i {
+    .fonctionnement_cards div i {
         position: absolute;
         left: 2.5rem;
         color: #bdbdbd;
