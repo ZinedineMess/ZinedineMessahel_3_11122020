@@ -1,34 +1,8 @@
-/*  POLICES  */
-/* ROBOTO */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap');
-/* SHRIKHAND */
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
-/* GENERAL */
-html {
-    width: 100%;
-}
-
-body {
-    margin: 0;
-}
-
+/* HEADER */
 main {
     background-color: #f6f6f6;
 }
 
-p {
-    font-family: 'Roboto Light', arial;
-}
-
-h2,
-h3,
-h4,
-span {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* HEADER */
 header {
     height: 3rem;
     position: relative;
@@ -49,6 +23,10 @@ header a {
 header i {
     font-size: 1.8rem;
     color: black;
+}
+
+.fa-arrow-left:hover {
+    color: #9356DC;
 }
 
 header i:visited {
@@ -197,7 +175,7 @@ header i:visited {
     position: absolute;
     top: 2rem;
     font-size: 95%;
-    width: 60%;
+    width: auto;
 }
 
 .plats span {
@@ -260,7 +238,7 @@ header i:visited {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 2rem;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
     background-size: 200%;
     background-image: linear-gradient(90deg, #FF79DA, #9356DC);
     background-position: 80%;
@@ -297,6 +275,10 @@ footer li {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
     margin-bottom: 0.5rem;
+}
+
+footer li:hover a {
+    color: #FF79DA;
 }
 
 
