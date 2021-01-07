@@ -175,7 +175,7 @@ header i:visited {
     position: absolute;
     top: 2rem;
     font-size: 95%;
-    width: auto;
+    width: 50%;
 }
 
 .plats span {
@@ -295,7 +295,6 @@ footer li:hover a {
         top: 1rem;
         font-weight: bold;
         left: 85%;
-        width: 100%;
     }
 
     .plats h3 {
@@ -306,7 +305,7 @@ footer li:hover a {
 }
 
 @media (max-width: 320.98px) {
-    .title {
+    .menu_title {
         font-size: 130%;
     }
 

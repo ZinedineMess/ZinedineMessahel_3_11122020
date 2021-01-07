@@ -272,6 +272,7 @@ article button {
 .restaurants_button-button2:hover {
     opacity: 1;
     transform: scale(1.03);
+    color : #9356DC;
 }
 
 /* FOOTER */
