@@ -227,7 +227,7 @@ article a {
     color: #000;
 }
 
-article span {
+.new {
     position: absolute;
     padding: 0.5rem;
     background-color: #99E2D0;
@@ -243,34 +243,34 @@ article p {
     margin: 1rem;
 }
 
-article button {
+.heart-like i,
+.heart-gradient i {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
-    border: none;
-    background-color: #efefef;
     font-size: 1.5rem;
     cursor: grab;
     transition: all .3s ease-in-out;
 }
 
-.restaurants_button {
+.heart-like i {
     opacity: 1;
 }
 
-.restaurants_button-button2 {
-    opacity: 0;
-    position: absolute;
-}
-
-.restaurants_button:hover {
+.heart-gradient i {
     opacity: 0;
 }
 
-.restaurants_button-button2:hover {
+.heart-like i:hover {
+    opacity: 0;
+}
+
+.heart-gradient i:hover {
     opacity: 1;
-    transform: scale(1.03);
-    color: #9356DC;
+    background: linear-gradient(90deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: transparent;
+    border-radius: 0.5rem;
 }
 
 /* MEDIA QUERIES */
@@ -287,10 +287,6 @@ article button {
         position: absolute;
         left: 1.1rem;
         color: #bdbdbd;
-    }
-
-    article button {
-        right: 1rem;
     }
 }
 
